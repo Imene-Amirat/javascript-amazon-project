@@ -134,6 +134,7 @@ export function renderOrderSummary() {
 
             document.querySelector(`.js-quantity-label-${productId}`).innerHTML = newQuantity;
             updateCartQuantity();
+            renderPaymentSummary();
 
             const container = document.querySelector(`.js-cart-item-container-${productId}`);
             container.classList.remove('is-editing-quantity');
